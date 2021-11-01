@@ -28,7 +28,7 @@ router.get('/', (req, res, next) => {
 router.get('/details', (req, res, next) => {
 res.render('books/details', {title: 'Add Book', books:books});
     /*****************
-     * ADD CODE HERE (Updated)*
+     * ADD CODE HERE (Updated: Get process created for add page)*
      *****************/
 
 });
@@ -55,7 +55,7 @@ book.create(newBook, (err, book)=> {
 });
 
     /*****************
-     * ADD CODE HERE (Updated)*
+     * ADD CODE HERE (Updated: Post process created for add page)*
      *****************/
 
 });
@@ -76,7 +76,7 @@ router.get('/details/:id', (req, res, next) => {
       }
   });
     /*****************
-     * ADD CODE HERE (Updated)*
+     * ADD CODE HERE (Updated: Get process created for edit page)*
      *****************/
 });
 
@@ -105,7 +105,7 @@ router.post('/details/:id', (req, res, next) => {
           res.redirect('/books');
       }
     /*****************
-     * ADD CODE HERE (Updated)*
+     * ADD CODE HERE (Updated: Post process created for edit page)*
      *****************/
 });
 });
@@ -127,7 +127,7 @@ router.get('/delete/:id', (req, res, next) => {
   });
 });
     /*****************
-     * ADD CODE HERE (Updated)*
+     * ADD CODE HERE (Updated: Process created for deletion of entries)*
      *****************/
 
 
